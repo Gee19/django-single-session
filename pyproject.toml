@@ -1,16 +1,25 @@
 [project]
 name = "django-single-session"
 version = "0.1.1"
+license = { file = "LICENSE" }
 authors = [{name = "Willem Van Onsem", email = "hapythexeu+gh@gmail.com"}]
-# The following seems to be defined outside of pyproject.toml
-dynamic = ['description', 'readme', 'requires-python', 'license']
+description = 'A Django app to enforce users to work only on one browser/device.'
+requires-python = '>=3.8'
+dependencies = [
+	'django >= 3.0.0'
+]
 
 [build-system]
-requires = ['setuptools>=45', 'wheel', 'setuptools_scm[toml]>=6.2']
-build-backend = 'setuptools.build_meta:__legacy__'
+requires = ['setuptools>=64', 'wheel', 'setuptools_scm>=8.0']
 
 [tool.setuptools_scm]
-write_to = "_version.py"
+version_file = "django-single-session/_version.py"
 
-[tool.black]
-extend-exclude = '(.*/migrations/.*|setup)\.py'
+# By default, include-package-data is true in pyproject.toml
+# include_package_data = true
+
+# No clue what this was doing
+# packages = find:
+# [tool.setuptools.packages.find]
+# where = []
+

@@ -1,6 +1,6 @@
 [project]
 name = "django-single-session"
-version = "0.1.1"
+version = "0.0.1"
 license = { file = "LICENSE" }
 authors = [{name = "Willem Van Onsem", email = "hapythexeu+gh@gmail.com"}]
 description = 'A Django app to enforce users to work only on one browser/device.'

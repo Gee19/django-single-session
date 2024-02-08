@@ -12,8 +12,8 @@ dependencies = [
 [build-system]
 requires = ['setuptools>=64', 'wheel', 'setuptools_scm>=8.0']
 
-[tool.setuptools_scm]
-version_file = "django-single-session/_version.py"
+# [tool.setuptools_scm]
+# version_file = "django-single-session/_version.py"
 
 # By default, include-package-data is true in pyproject.toml
 # include_package_data = true
